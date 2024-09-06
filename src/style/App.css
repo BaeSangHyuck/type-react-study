@@ -1,0 +1,41 @@
+/* MainPage.module.css */
+
+/* 페이지 컨테이너 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 인사말 스타일 */
+.greeting {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 버튼 컨테이너 */
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* 버튼 스타일 */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

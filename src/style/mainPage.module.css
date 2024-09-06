@@ -1,0 +1,92 @@
+/* mainPage.module.css */
+
+/* 전체 컨테이너 */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f4f6f9, #e0e7ff);
+  text-align: center;
+  padding: 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+  margin-bottom: 40px;
+}
+
+.headerTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.headerSubtitle {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* 메인 이미지 */
+.imageContainer {
+  margin: 20px 0;
+}
+
+.mainImage {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 환영 메시지 스타일 */
+.greeting {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* 버튼 컨테이너 */
+.button_container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* 버튼 스타일 */
+.button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* 애니메이션 */
+.greeting, .headerTitle, .headerSubtitle, .mainImage, .button {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* 애니메이션 키프레임 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
